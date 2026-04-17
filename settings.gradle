@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://maven.fabricmc.net' }
+        maven { url = 'https://maven.neoforged.net/releases' }
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == 'fabric-loom') {
+                useModule("net.fabricmc:fabric-loom:${requested.version}")
+            }
+        }
+    }
+}
+
+rootProject.name = 'QuantumCore'
+
+include 'quantumcore-common'
+include 'quantumcore-neoforge'
+include 'quantumcore-fabric'

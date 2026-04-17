@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.quantumcore.fabric.screen",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": ["FabricSplashScreenMixin"],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

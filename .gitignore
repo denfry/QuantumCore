@@ -1,0 +1,15 @@
+.gradle/
+.gradle-home/
+.project-cache/
+.tmp-wrapper/
+build/
+out/
+*.log
+*.class
+*.jar
+*.war
+*.zip
+*.iml
+.idea/
+.vscode/
+**/build/

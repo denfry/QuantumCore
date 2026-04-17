@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "quantumcore"
+version = "${mod_version}"
+displayName = "QuantumCore"
+authors = "QuantumCore"
+description = '''
+QuantumCore surgical startup acceleration core.
+'''
+
+[[mixins]]
+config = "quantumcore.common.mixins.json"
+
+[[mixins]]
+config = "quantumcore.neoforge.mixins.json"
+
+[[dependencies.quantumcore]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.quantumcore]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,1.22)"
+ordering = "NONE"
+side = "BOTH"

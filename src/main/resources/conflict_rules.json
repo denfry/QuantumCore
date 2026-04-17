@@ -1,0 +1,30 @@
+[
+  {
+    "id": "optifine-sodium-like",
+    "severity": "HIGH",
+    "mods": ["optifine", "embeddium"],
+    "message": "OptiFine and Embeddium both patch renderer internals and can conflict.",
+    "suggestedFix": "Remove OptiFine from the pack or disable Embeddium advanced renderer hooks."
+  },
+  {
+    "id": "kubejs-groovyscript-recipe-dupe",
+    "severity": "MEDIUM",
+    "mods": ["kubejs", "groovyscript"],
+    "message": "KubeJS and GroovyScript may both inject recipe mutations during reload.",
+    "suggestedFix": "Keep recipe mutations in one scripting mod and disable duplicate scripts in the other."
+  },
+  {
+    "id": "modernfix-starlight-ordering",
+    "severity": "MEDIUM",
+    "mods": ["modernfix", "starlight"],
+    "message": "ModernFix and Starlight can produce timing-sensitive worldgen init order issues in some packs.",
+    "suggestedFix": "Update both mods to latest versions and disable async world init in one mod if crashes persist."
+  },
+  {
+    "id": "spark-perf-overlap",
+    "severity": "LOW",
+    "mods": ["spark", "observable"],
+    "message": "Multiple profiler mods can increase overhead during diagnostics.",
+    "suggestedFix": "Enable only one profiling mod for routine play sessions."
+  }
+]

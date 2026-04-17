@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+issueTrackerURL = "https://example.com/quantumcore/issues"
+
+[[mods]]
+modId = "quantumcore"
+version = "${mod_version}"
+displayName = "QuantumCore"
+displayURL = "https://example.com/quantumcore"
+logoFile = "quantumcore.png"
+credits = "QuantumCore Performance Team"
+authors = "QuantumCore"
+description = '''
+QuantumCore is a high-performance optimization core for heavy NeoForge modpacks.
+It provides disk caching, parallel loading, memory interning, GC pressure reduction,
+mixin runtime optimizations, and automatic mod conflict diagnostics.
+'''
+
+[[mixins]]
+config = "quantumcore.mixins.json"
+
+[[dependencies.quantumcore]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.quantumcore]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,1.22)"
+ordering = "NONE"
+side = "BOTH"

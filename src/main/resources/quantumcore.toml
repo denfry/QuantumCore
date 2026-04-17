@@ -1,0 +1,19 @@
+# QuantumCore configuration.
+# Each module can be disabled independently for compatibility triage.
+
+[modules]
+disk_cache = true
+parallel_loader = true
+lazy_initialization = true
+memory_optimization = true
+gc_pressure_reduction = true
+mixins = true
+conflict_detector = true
+
+[cache]
+# Increment if you want to invalidate all local cache data manually.
+manual_cache_epoch = 1
+
+[monitoring]
+# Heap percentage that triggers warning logs.
+memory_warn_percent = 80

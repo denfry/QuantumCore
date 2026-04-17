@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "quantumcore",
+  "version": "${version}",
+  "name": "QuantumCore",
+  "description": "QuantumCore surgical startup acceleration core.",
+  "authors": ["QuantumCore"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.quantumcore.fabric.QuantumCoreFabric"],
+    "client": [
+      "dev.quantumcore.fabric.QuantumCoreFabric",
+      "dev.quantumcore.fabric.screen.FabricModLoadingHooks"
+    ]
+  },
+  "mixins": [
+    "quantumcore.fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21",
+    "java": ">=21"
+  }
+}

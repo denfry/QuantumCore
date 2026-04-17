@@ -1,0 +1,21 @@
+[features]
+atlas_cache = true
+checkpoint = false
+incremental_cache = true
+surgical_cache = true
+memory_dedup = true
+gc_pool = true
+background_preloader = true
+
+[dashboard]
+enabled = true
+show_mod_timings = true
+show_stage_timeline = true
+show_memory_bar = true
+show_eta = true
+accent_color = "0x4488FF"
+completion_message = true
+
+[formats]
+checkpoint = 1
+atlas = 1

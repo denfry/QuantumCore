@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    api 'it.unimi.dsi:fastutil:8.5.12'
+    api 'com.esotericsoftware:kryo:5.6.0'
+    api 'net.openhft:zero-allocation-hashing:0.16'
+    api 'org.lz4:lz4-java:1.8.0'
+    api 'com.github.ben-manes.caffeine:caffeine:3.1.8'
+    implementation 'com.google.code.gson:gson:2.11.0'
+
+    compileOnly 'net.neoforged:neoforge:21.1.172'
+    compileOnly 'org.spongepowered:mixin:0.8.5'
+    compileOnly 'org.lwjgl:lwjgl:3.3.3'
+    compileOnly 'org.lwjgl:lwjgl-glfw:3.3.3'
+    compileOnly 'org.lwjgl:lwjgl-opengl:3.3.3'
+    compileOnly 'org.lwjgl:lwjgl-stb:3.3.3'
+}
